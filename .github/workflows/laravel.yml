@@ -34,4 +34,4 @@ jobs:
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
     - name: check duplicate code
-      run: ./vendor/bin/phpcpd app/ --min-line=5 --min-token=10
+      run: ./vendor/bin/phpcpd app/Http/Controllers --min-line=5 --min-token=10
